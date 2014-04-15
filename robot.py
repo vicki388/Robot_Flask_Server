@@ -17,7 +17,9 @@ def hello(name=None):
 @app.route('/robot/go/')
 @app.route('/robot/go/<x>')
 def StraightLine(x=1):
-	return render_template('hello.html', x=x)
+
+	x = int(x)
+	return render_template('straight.html', x=x)
 
 if __name__ == '__main__':
 	app.debug = True

@@ -4,16 +4,15 @@
 </head>
 <body>
 	<div>
-  main:
-  pause 100
+  main:<br>
+  pause 100<br>
   
-  ;forward roughly 1 ft
-  high b.6
-  high b.4
-  low b.7
-  low b.5
-  //pause 1500
-  pause {% if x %} 1500 * x {% else %} Incorrect input  {% endif %}
+  ;forward roughly 1 ft<br>
+  high b.6<br>
+  high b.4<br>
+  low b.7<br>
+  low b.5<br>
+  pause {% if x %} {{x*1500}} {% else %} Incorrect input  {% endif %}
 </div>
 </body>
 </html>
