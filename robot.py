@@ -17,9 +17,14 @@ def hello(name=None):
 @app.route('/robot/go/')
 @app.route('/robot/go/<x>')
 def StraightLine(x=1):
-
 	x = int(x)
 	return render_template('straight.html', x=x)
+
+@app.route('/robot/square/')
+@app.route('/robot/square/<x>')
+def Square(x=1):
+	x = int(x)
+	return render_template('square.html', x=x)
 
 if __name__ == '__main__':
 	app.debug = True
